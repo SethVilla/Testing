@@ -1,3 +1,7 @@
 Test Driven Development
 
 Run Npm Test, no need to run server.
+
+fix nested git folder 
+
+git rm --cached client_folder
