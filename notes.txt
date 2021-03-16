@@ -73,3 +73,19 @@ https://stackoverflow.com/questions/64658031/which-enzyme-adapter-works-with-rea
 
 // Remove properties for testing
 npm install --save-dev babel-plugin-react-remove-properties
+
+// Edit Babel
+
+// delete data attributes 
+npm Run eject
+
+  "env": {
+    "production": {
+      "plugins": [
+        ["react-remove-properties", {"properties": ["data-test", "data-foo", /my-suffix-expression$/]}]
+      ]
+    }
+  }
+
+  // create production build
+  // Data-test attributes are gone 
