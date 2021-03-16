@@ -5,3 +5,71 @@ Run Npm Test, no need to run server.
 fix nested git folder 
 
 git rm --cached client_folder
+
+Jest Commands 
+
+Npm Test Script 
+
+Watch Mode watches for changes by default since last commit
+
+a - all tests 
+
+0 - recently changed tests
+
+Jest is configured to look for by default files with .test.js
+
+Enzyme
+
+Search through Dom
+
+Simulate Events
+
+Shallow Rendering One Level Deep Parent renders but Children will have placeholders
+
+Mount Render Parent and Children
+
+Can access props and state
+
+Installation 
+
+npm install --save-dev enzyme jest-enzyme enzyme-adapter-react-16
+
+
+Types of test 
+
+Unit tests
+
+    Test one peice of code one function isolated
+
+Integration Tests 
+
+    multiple units work together
+
+
+Acceptance / End to End testing
+
+    User interactions
+
+Server Testeing with Jest
+
+Or selenium 
+
+
+Testing Trade Offs 
+
+Easy to maintain 
+
+Test behaviour instead of implementation 
+
+Snap Shots
+
+Brittle
+
+Freeze component in a speciific state
+
+Install React 17 and Adaptor 
+
+https://stackoverflow.com/questions/64658031/which-enzyme-adapter-works-with-react-17
+
+// Remove properties for testing
+npm install --save-dev babel-plugin-react-remove-properties
