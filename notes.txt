@@ -93,3 +93,8 @@ npm Run eject
 
   // Good reference for describe vs it vs test   
   https://stackoverflow.com/questions/32055287/what-is-the-difference-between-describe-and-it-in-jest 
+
+  Facebook Proptypes
+  
+  yarn add prop-types
+
