@@ -1,12 +1,8 @@
 import React from 'react';
-import Enzyme, {shallow} from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import checkPropTypes from 'check-prop-types';
-
+import {shallow} from 'enzyme';
 import Congrats from './Congrats';
-import {findByTestAttr} from '../test/testUtils'
+import {findByTestAttr, checkProps} from '../test/testUtils'
 
-Enzyme.configure({adapter: new Adapter()})
 
 const defaultProps = {success: false};
 
@@ -38,11 +34,6 @@ describe("is initialized", () => {
 
     it("does not throw warning with expected props", () => {
         const expectedProps = {success: false}
-        // Pass propTypes Object
-        // expected props
-        // type prop
-        // component name
-        const propError = checkPropTypes(Congrats.propTypes, expectedProps, 'prop', Congrats.name)
-        expect(propError).toBeUndefined();
+        checkProps(Congrats, expectedProps)
     })
 })

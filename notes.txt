@@ -98,3 +98,8 @@ npm Run eject
   
   yarn add prop-types
 
+  When you don't create react app you have to write a setup test for config
+
+jest.config.js 
+
+setupFilesAfterEnv: ['<rootDir>/src/setupTests.js']
