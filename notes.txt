@@ -88,4 +88,8 @@ npm Run eject
   }
 
   // create production build
-  // Data-test attributes are gone 
+  // Data-test attributes are gone
+
+
+  // Good reference for describe vs it vs test   
+  https://stackoverflow.com/questions/32055287/what-is-the-difference-between-describe-and-it-in-jest 
