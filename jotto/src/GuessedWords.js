@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
 const GuessedWords = (props) => {
@@ -20,14 +19,14 @@ const GuessedWords = (props) => {
         contents = (
             <div data-test="guessed-words">
                 <h3>Guessed Words</h3>
-                <table>
-                    <thead>
+                <table className="table table-sm">
+                    <thead className="thead-light">
                         <tr>
                             <th>
                                Guess
                             </th>
                             <th>
-                                Matching Letter
+                                Matching Letters
                             </th>
                         </tr>
                     </thead>
