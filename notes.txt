@@ -118,3 +118,22 @@ Provide return values
   Conditions
 
 Do not destructure context 
+
+moxios intercepts http requests for tets
+
+// do different things to update a single key
+
+[state, dispatch] = React.useReducer(reducer, initialState)
+dispatch function updates state
+
+dispact(action) -> reducer(state, action)
+conventionally, action is object with two properties type and payload
+switch on type 
+
+// clear functions 
+dont have to pass state as an argument explicitly
+
+Do not destructure Hooks in your code otherwise not picked up in testing
+
+
+
