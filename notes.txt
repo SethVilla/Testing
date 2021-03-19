@@ -103,3 +103,18 @@ npm Run eject
 jest.config.js 
 
 setupFilesAfterEnv: ['<rootDir>/src/setupTests.js']
+
+Mocks 
+
+Replace Functions
+Keep real Function from running 
+
+  Prevent side effects like network calls
+
+Spy on function to see whats called
+
+Provide return values
+
+  Conditions
+
+Do not destructure context 
