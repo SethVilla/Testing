@@ -135,5 +135,48 @@ dont have to pass state as an argument explicitly
 
 Do not destructure Hooks in your code otherwise not picked up in testing
 
+// Context test plan
 
+Option 1 
+
+Mock useContext 
+
+mock return value sets language value
+
+Pros
+
+isolated unit test 
+
+can use shallow to avoid testing children we only care about Parent
+
+Cons 
+
+multiple use contexts are dangerous
+
+you can only mock use Context once 
+
+specify order of values 
+
+not relevant for custom hook / internal state pattern
+
+
+
+Option 2 
+
+Wrap Component in Provider in setup function 
+
+set language with value prop
+
+Pros
+
+closer to actual app 
+
+extra functionality Provider unlikely to functionality
+
+Cons 
+
+need to use mount 
+
+shallow just returns Provider
+tests depend on children of component under test
 
