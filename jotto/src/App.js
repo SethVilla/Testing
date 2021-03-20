@@ -6,7 +6,8 @@ import hookactions from './actions/hookactions';
 import Input from './input';
 import languageContext from './contexts/languageContext'
 import LanguagePicker from './LanguagePicker'
-
+import successContext from './contexts/successContext';
+import guessedWordsContext from './contexts/guessedWordsContext'
 /**
  * 
  * @param {object} state existing state
@@ -52,11 +53,14 @@ if(!state.secretWord){
     <div className="container" data-test="component-app">
       <h1>Jotto</h1>
       <languageContext.Provider value={state.language}>
+      <LanguagePicker setLanguage={setLanguage}/>
+      <guessedWordsContext.GuessedWordsProvider>
+      <successContext.SuccessProvider>
+      <Congrats/>
       <Input secretWord={state.secretWord}/>
-      {/* <Congrats success={true}/>
-      <GuessedWords guessedWords={[
-        {guessedWord: 'train', letterMatchCount: 3}
-      ]}/> */}
+      </successContext.SuccessProvider>
+      <GuessedWords/>
+      </guessedWordsContext.GuessedWordsProvider>
       </languageContext.Provider>
     </div>
   );
