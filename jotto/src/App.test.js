@@ -10,7 +10,7 @@ const setup = (secretWord = "party") => {
   mockGetSecretWord.mockClear();
   hookActions.getSecretWord = mockGetSecretWord;
   const mockUseReducer = jest.fn().mockReturnValue([
-    {secretWord},
+    {secretWord, language: 'en'},
     jest.fn()
   ])
 
@@ -23,7 +23,6 @@ describe('app tests', () => {
   it("app renders without error", () => {
     const wrapper = setup();
     const component = findByTestAttr(wrapper, 'component-app');
-    console.log(component.exists())
     expect(component.length).toBe(1);
   })
 });
