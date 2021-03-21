@@ -16,6 +16,7 @@ function setup(guessedWordsStrings=[], secretWord="party") {
       </successContext.SuccessProvider>
     </guessedWordsContext.GuessedWordsProvider>
   );
+  
 
   const inputBox = findByTestAttr(wrapper, 'input-box');
   const submitButton = findByTestAttr(wrapper, 'submit-button');
