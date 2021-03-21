@@ -180,3 +180,31 @@ need to use mount
 shallow just returns Provider
 tests depend on children of component under test
 
+React Testing Library Notes
+
+Not just a library, also a philosophy "opinionated"
+
+test your software the way users actually use it  
+
+  no internal implementation 
+
+Find elements by accessibility markers no test Ids
+
+  the idea is that accessibility markers are readable by screen readers
+
+  React Testing Library provides virtual dom for tests 
+
+  Jest test runner that finds tests runs tests determines whether tests pass or fail 
+
+  Create React app
+
+  npm package 
+
+  Configures with 
+
+  configuration 
+  webpack and babel 
+  web server 
+  testing library 
+
+  
