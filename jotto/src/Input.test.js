@@ -72,7 +72,7 @@ describe("language picker", () => {
   });
 });
 
-describe("huh", () => {
+describe("success true test", () => {
   let mockSetSuccess = jest.fn();
   beforeEach(() => {
     mockSetSuccess.mockClear();
