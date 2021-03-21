@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 const successContext = React.createContext();
 
 /**
@@ -16,8 +16,8 @@ const useSuccess = () => {
 
 const SuccessProvider = (props) => {
     const [success, setSuccess] = React.useState(false);
+    
     const value = React.useMemo(() => [success, setSuccess], [success])
-
     return <successContext.Provider value={value} {...props}/>
 
 } 
