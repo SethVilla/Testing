@@ -207,4 +207,67 @@ Find elements by accessibility markers no test Ids
   web server 
   testing library 
 
-  
+  Render 
+
+  creates virtual dom 
+
+  screen allows us to access dom
+
+  Jest Dom 
+
+  comes with create react app
+
+  src/setup imports it before each test and makes matchers available
+
+  Dom based matchers usually include to be
+
+
+react  testing library helps with:
+
+helps rendering components into the virtual dom 
+
+searching the virtual dom 
+
+interacting with the virtual dom
+
+jest is recommended by testing library 
+
+comes with react create app 
+
+jest is a test runner
+
+
+Jest Global test method 
+
+- string description 
+- test function fails if error is thrown 
+
+  assertions throw errors
+
+Test Driven Development 
+
+  write test before code
+
+  then write code according to spec set by tests
+
+  red green testing 
+
+  test fails before code is written 
+
+  Re run tests for free  
+
+  Testing Library recommends using Queries accessible to everyone
+
+  Roles are intertwined with screen readers
+
+
+
+
+
+
+
+
+
+
+
+

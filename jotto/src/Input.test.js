@@ -5,17 +5,20 @@ import { checkProps, findByTestAttr } from "../test/testUtils";
 import languageContext from "./contexts/languageContext";
 import Input from "./Input";
 import successContext from "./contexts/successContext";
+import guessedWordsContext from './contexts/guessedWordsContext'
 
 const setup = ({ language, secretWord, success }) => {
   language = language || "en";
   secretWord = secretWord || "party";
   success = success || false;
   return mount(
+    <guessedWordsContext.GuessedWordsProvider>
     <languageContext.Provider value={language}>
       <successContext.SuccessProvider value={[success, jest.fn()]}>
         <Input secretWord={secretWord} />
       </successContext.SuccessProvider>
     </languageContext.Provider>
+    </guessedWordsContext.GuessedWordsProvider>
   );
 };
 
@@ -76,7 +79,7 @@ describe("success true test", () => {
   let mockSetSuccess = jest.fn();
   beforeEach(() => {
     mockSetSuccess.mockClear();
-    React.useState = jest.fn(() => [false, mockSetSuccess]);
+    //React.useState = jest.fn(() => [false, mockSetSuccess]);
   });
   it("input component does not show when success is true", () => {
     const wrapper = setup({ secretWord: "party", success: true });
